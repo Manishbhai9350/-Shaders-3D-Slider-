@@ -8,4 +8,6 @@ Live - ( <a href="https://shaders-3d-slider.onrender.com" >View</a> )
 
 ## Preview 
 
-![](./3D%20Shader%20Image%20Slide.gif)
+<div style="width:100%;display:flex;justify-content:center;">
+<img src="./3D Shader Image Slide.gif" style="width:max(70%,350px); height:auto;" />
+</div>
