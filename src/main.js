@@ -141,7 +141,7 @@ const Wheel = (e) => {
   TargetIntensity = Math.max(-MaxInstensity,Math.min(TargetIntensity,MaxInstensity))
   TargetPosition -= e.deltaY * PositionIncreamentFactor
   TargetPosition = Math.max(0,Math.min(TargetPosition,MaxPosition))
-  TargetScale = 1 + (e.deltaY * .0001)
+  TargetScale = 1 + (e.deltaY * .01)
   TargetScale = Math.max(SMin,Math.min(TargetScale,SMax))
   if(TargetPosition <= 0) {
     TargetPosition = MaxPosition
