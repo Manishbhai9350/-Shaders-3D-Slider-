@@ -91,7 +91,7 @@ const { width } = SceneBounds(scene, camera, renderer, Three);
 let PlaneWidth = innerWidth > 750 ? width * 2 : width * 3;
 let PlaneHeight = PlaneWidth * (9 / 16);
 const Plane = new Three.Mesh(
-  new Three.PlaneGeometry(PlaneWidth, PlaneHeight, 40, 40),
+  new Three.PlaneGeometry(PlaneWidth, PlaneHeight, 80, 80),
   PlaneMaterial
 );
 
@@ -219,7 +219,7 @@ const Resize = () => {
   const { width } = SceneBounds(scene, camera, renderer, Three);
   let PlaneWidth = innerWidth > 750 ? width * 2 : width * 3;
   let PlaneHeight = PlaneWidth * (9 / 16);
-  Plane.geometry = new Three.PlaneGeometry(PlaneWidth,PlaneHeight,40,40);
+  Plane.geometry = new Three.PlaneGeometry(PlaneWidth,PlaneHeight,80,80);
 };
 
 window.addEventListener('touchstart', onTouchStart, { passive: false });
